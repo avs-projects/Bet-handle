@@ -1,0 +1,444 @@
+/*** general settings ***/
+
+body {
+    background-color: #354152;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: sans-serif;
+    margin: 0;
+    min-height: 100%;
+    padding-top: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+h2 {
+    font-size: 2.75rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: white;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 100;
+    margin: 0 0 3rem;
+}
+
+h3 {
+    font-size: 1.4em;
+    letter-spacing: 0.1rem;
+    color: white;
+}
+
+h4 {
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    position: relative;
+    right: 16%;
+    color: white;
+}
+
+p {
+    margin: 1em auto 1em auto;
+    color: #4a4b4b;
+    font-style: italic;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+hr {
+    opacity: 0.40;
+}
+
+/*** Intended for the header ***/
+
+header {
+    border-radius: 30px;
+    padding: 1px 10%;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+header img {
+    float: left;
+    width: 40px;
+    margin: 10px;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+/* Selection menu */
+
+.menu {
+    float: right;
+}
+
+.menu .ulmenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu .limenu {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+}
+
+.menu .amenu {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.menu .bmenu {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.menu .amenu:hover {
+    color: white;
+}
+
+.menu .bmenu:hover {
+    color: white;
+}
+
+.menu .amenu::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: rgb(79, 169, 141);
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+.menu .bmenu::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+.menu .amenu:hover::before {
+    width: 100%;
+}
+
+.menu .bmenu:hover::before {
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+/*** Redirect link ***/
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(79, 169, 141);
+}
+
+label {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 100;
+    margin: 0 0 1.5rem;
+    color: rgb(79, 169, 141);
+}
+
+.infos {
+    margin-bottom: 2rem;
+}
+
+/*** Handling error messages ***/
+
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label {
+    color: #a94442;
+}
+
+.has-error .form-control {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.has-error .form-control:focus {
+    border-color: #843534;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+}
+
+.has-error .input-group-addon {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #a94442;
+}
+
+.has-error .form-control-feedback {
+    color: #a94442;
+}
+
+.has-feedback label ~ .form-control-feedback {
+    top: 25px;
+}
+
+.has-feedback label.sr-only ~ .form-control-feedback {
+    top: 0;
+}
+
+.help-block {
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    color: #737373;
+}
+
+a.label:hover,
+a.label:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.label:empty {
+    display: none;
+}
+
+.label-danger[href]:hover,
+.label-danger[href]:focus {
+    background-color: #c9302c;
+}
+
+/*** Setting up forums ***/
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    box-sizing: border-box;
+}
+
+.align {
+    float: left;
+    width: 33%;
+}
+
+@media screen and (max-width: 1350px) {
+    .align {
+        width: 100%;
+    }
+}
+
+/* box size */
+
+.grid {
+    margin: 0 auto;
+    max-width: 25rem;
+    width: 100%;
+}
+
+/* Form elements: input and submit */
+
+#validation {
+    padding: .5rem 1rem;
+    border: 1px solid #242c37;
+    border-radius: 999px;
+    background-color: rgb(79, 169, 141);
+    color: #fff;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+#validation:hover {
+    background-color: rgb(47, 103, 85);
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    margin-bottom: 1rem;
+    border: 1px solid #242c37;
+    border-radius: 999px;
+    text-align: center;
+}
+
+input {
+    border: 0;
+    font: inherit;
+}
+
+/* Box of forms */
+
+.register {
+    box-shadow: 0 0 250px #000;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+/*** Table design ***/
+
+table {
+    width: 60%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+#t01 tr:nth-child(even) {
+    background-color: #243245;
+}
+
+#t01 tr:nth-child(odd) {
+    background-color: rgb(60, 113, 96);
+}
+
+#t01 th {
+    background-color: black;
+    color: white;
+}
+
+/*** Intended for footer ***/
+
+/* Fixing the footer at the bottom of the page */
+footer {
+    clear: both;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.infofooter {
+    float: left;
+}
+
+.infopj {
+    font-size: 12px;
+}
+
+/* Intended for social networks */
+
+.ulfooter {
+    position: relative;
+    right: 2.5%;
+    text-align: center;
+}
+
+/* Personalization of bubbles */
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 40%;
+}
+
+.fa:hover {
+    opacity: 0.8;
+    transform: translateY(-8px);
+}
+
+/* Changing the colors specific to each of the media buttons */
+
+.fa-university {
+    background: #a4c639;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
