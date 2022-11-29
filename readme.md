@@ -1,14 +1,15 @@
 # Bet Handle
 
-# Project Description
+## Project Description
 
 Netword and web project that connect the bet of a user on football game.
 
-# Author 
+## Author 
 
 - Alexandre VAZ SILVA and Frédéric VO
 
-# Other 
+## Other 
 
 Project level : L3
+
 Date : 2021
